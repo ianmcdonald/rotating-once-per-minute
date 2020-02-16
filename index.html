@@ -11,12 +11,42 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
+      -o-animation-name: rotating;
+      -o-animation-duration: 60s;
+      -o-animation-iteration-count: infinite;
+      -o-animation-timing-function: linear;
+      -o-animation-direction: forwards;
+      -o-transform-origin: center center;
+      -moz-animation-name: rotating;
+      -moz-animation-duration: 60s;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-timing-function: linear;
+      -moz-animation-direction: forwards;
+      -moz-transform-origin: center center;
+      -webkit-animation-name: rotating;
+      -webkit-animation-duration: 60s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-direction: forwards;
+      -webkit-transform-origin: center center;
       animation-name: rotating;
       animation-duration: 60s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       animation-direction: forwards;
       transform-origin: center center;
+    }
+    @-o-keyframes rotating {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @-webkit-keyframes rotating {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @-moz-keyframes rotating {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
     }
     @keyframes rotating {
       from { transform: rotate(360deg); }
